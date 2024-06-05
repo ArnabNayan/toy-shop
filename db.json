@@ -1,0 +1,110 @@
+ [
+    {
+      "title": "Lego Classic Brick Box",
+      "description": "A large collection of classic Lego bricks for endless building possibilities.",
+      "image_url": "https://m.media-amazon.com/images/I/51ond4vPQEL._AC_.jpg",
+      "price": 200,
+      "rating": 4.8,
+      "category": "Building Sets",
+      "discount": "10% off"
+    },
+    {
+      "title": "Iron Man",
+      "description": "Iron man with super and smashing power.",
+      "image_url": "https://images.tokopedia.net/img/cache/700/product-1/2018/6/27/12225669/12225669_a9fb055e-3a79-4f63-beed-1454464726c5_800_800.jpg",
+      "price": 250,
+      "rating": 4.7,
+      "category": "Fighter",
+      "discount": null 
+    },
+    {
+      "title": "Hot Wheels Ultimate Garage",
+      "description": "An enormous garage with parking space for over 100 cars and a surprise shark attack.",
+      "image_url": "https://www.toysrus.com.sg/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw4eb2173a/2/b/6/1/2b61d47c79238247fe89e964c91a099d353bcd76_137154_i1.jpg?sw=500&sh=500&q=75",
+      "price": 250,
+      "rating": 4.6,
+      "category": "Vehicles",
+      "discount": "5% off"
+    },
+    {
+      "title": "NERF Elite Blaster",
+      "description": "High-performance NERF blaster with motorized dart shooting capability.",
+      "image_url": "https://images.tokopedia.net/img/cache/700/product-1/2018/9/23/19409960/19409960_c8baaa46-43cc-4673-a425-59ce2dd6e3da_800_800.jpg",
+      "price": 300,
+      "rating": 4.5,
+      "category": "Outdoor Play",
+      "discount": "20% off"
+    },
+    {
+      "title": "Fisher-Price Laugh & Learn Smart Stages Chair",
+      "description": "Interactive learning chair with songs, phrases, and activities for toddlers.",
+      "image_url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/03/19/6417d1ae1741be26785e97f4/m_6417d1c5a0aeb70d0800ed40.jpg",
+      "price": 350,
+      "rating": 4.9,
+      "category": "Educational Toys",
+      "discount": null    
+    },
+    {
+      "title": "Play-Doh 36-Can Mega Pack",
+      "description": "A huge pack of Play-Doh with 36 different colors for creative play.",
+      "image_url": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/2/1/8663be90-04f5-4cc4-be09-cfe4b0850477.jpg",
+      "price": 270,
+      "rating": 4.8,
+      "category": "Arts & Crafts",
+      "discount": "10% off"
+    },
+    {
+      "title": "Transformers",
+      "description": "A group of strongest robots fighting nicely with enemy.",
+      "image_url": "https://www.jnltradinginc.com/cdn/shop/products/JNL_535ab651-3581-4422-81d0-e7f5dec04fa2_grande.jpg?v=1512621788",
+      "price": 400,
+      "rating": 4.7,
+      "category": "Pretend Play",
+      "discount": null
+    },
+    {
+      "title": "Melissa & Doug Wooden Railway Set",
+      "description": "Deluxe wooden railway set with 100 pieces including tracks, trains, and accessories.",
+      "image_url": "https://m.media-amazon.com/images/I/510Yof-om-L._SL500_.jpg",
+      "price": 500,
+      "rating": 4.8,
+      "category": "Building Sets",
+      "discount": "20% off" 
+    },
+    {
+      "title": "Paw Patrol Ultimate Rescue Fire Truck",
+      "description": "A large Paw Patrol fire truck with extendable ladder and working water cannon.",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/81gx2fNyozL._AC_UL600_SR600,600_.jpg",
+      "price": 300,
+      "rating": 4.6,
+      "category": "Action Figures",
+      "discount": null 
+    },
+    {
+      "title": "Crayola Inspiration Art Case",
+      "description": "A comprehensive art case with crayons, markers, and colored pencils for budding artists.",
+      "image_url": "https://www.toysruschina.com/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw91f80914/3/6/c/f/36cfc9d8c5b54e2a85c5689ade9d4993e6da7208_109226_i1.jpg?sw=500&sh=500&q=75",
+      "price": 320,
+      "rating": 4.9,
+      "category": "Arts & Crafts",
+      "discount": "5% off"
+    },
+    {
+      "title": "Captain America",
+      "description": "This is a toy from avengers who is a hero of the avengers,this toy is nice looking ,good and well material used to make this toys.",
+      "price": "300",
+      "category": "Action type",
+      "image_url": "https://static-01.daraz.com.bd/p/b24e52c10b24840dd3f3c58d6aa8c4d2.jpg",
+      "rating": "4.5",
+      "discount": "10%"
+    },
+    {
+      "title": "Fighter Plane",
+      "description": "This toy is manufactured in 12th march inspired by our airforce pilot and their dedication and this is very nice and good looking toy for your child.",
+      "price": "350",
+      "category": "Action type",
+      "image_url": "https://ae01.alicdn.com/kf/S546c0b9ba84843a3b52c5c97d472a560N/Flying-Bear-Fx820-Susu35-Remote-Control-Aircraft-Fighter-Fixed-Wing-Glider-Children-S-Model-Toy-Aircraft.jpg",
+      "rating": "4.8",
+      "discount": "5%"
+    }
+]
