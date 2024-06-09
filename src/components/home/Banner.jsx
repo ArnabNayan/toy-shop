@@ -44,15 +44,15 @@ const Banner = () => {
                 
                 
 
-               <div className='lg:pt-40 pt-10'> 
+               <div className='lg:pt-40 pt-20'> 
                <div style={{ textAlign: 'center' }}>
               
 </div>
                
-                <h1  className='flex justify-center text-base lg:text-6xl lg:ms-8 lg:mt-28 text-slate-400 font-serif'>Get The Best Toy For Your Kid </h1></div>
-                <p  className='text-lg lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
-               <div className="flex justify-center items-center lg:mt-10">
-               <button className="btn bg-cyan-600 font-serif font-bold px-4 text-xl text-white"
+                <h1  className='flex justify-center text-2xl   lg:text-6xl lg:ms-8 lg:mt-28 text-slate-400 font-serif'>Get The Best Toy For Your Kid </h1></div>
+                <p  className='text-sm lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
+               <div className="flex justify-center items-center mt-10 lg:mt-10">
+               <button className="btn bg-cyan-600 font-serif font-bold text-sm px-2 lg:px-4  lg:text-xl text-white"
           >
             Visit us
           </button>
@@ -75,15 +75,15 @@ const Banner = () => {
                 
                 
 
-               <div className='lg:pt-40 pt-10'> 
+               <div className='lg:pt-40 pt-20'> 
                <div style={{ textAlign: 'center' }}>
               
 </div>
                
-                <h1  className='flex justify-center text-base lg:text-6xl lg:ms-8 lg:mt-28 text-slate-400 font-serif'>Get The Best Toy For Your Kid </h1></div>
-                <p  className='text-lg lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
-                <div className="flex justify-center items-center lg:mt-10">
-               <button className="btn bg-cyan-600 font-serif font-bold px-4 text-xl text-white"
+                <h1  className='flex justify-center text-2xl lg:text-6xl lg:ms-8 lg:mt-28 text-slate-400 font-serif'>Get The Best Toy For Your Kid </h1></div>
+                <p  className='text-sm lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
+                <div className="flex justify-center items-center mt-10 lg:mt-10">
+               <button className="btn bg-cyan-600 font-serif font-bold text-sm px-2 lg:px-4  lg:text-xl text-white"
           >
             Visit us
           </button>
@@ -104,15 +104,15 @@ const Banner = () => {
                 
                 
 
-               <div className='lg:pt-40 pt-10'> 
+               <div className='lg:pt-40 pt-20'> 
                <div style={{ textAlign: 'center' }}>
               
 </div>
                
-                <h1  className='flex justify-center text-base lg:text-6xl lg:ms-8 lg:mt-28 text-slate-300 font-serif'>Get The Best Toy For Your Kid </h1></div>
-                <p  className='text-lg lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
-                <div className="flex justify-center items-center lg:mt-10">
-               <button className="btn bg-cyan-600 font-serif font-bold px-4 text-xl text-white"
+                <h1  className='flex justify-center text-2xl lg:text-6xl lg:ms-8 lg:mt-28 text-slate-300 font-serif'>Get The Best Toy For Your Kid </h1></div>
+                <p  className='text-sm lg:text-3xl text-blue-300  lg:mt-5 font-serif lg:ms-8 flex justify-center'>Make playtime enjoyable with our  finest toys and games</p>
+                <div className="flex justify-center items-center mt-10 lg:mt-10">
+               <button className="btn bg-cyan-600 font-serif font-bold text-sm px-2 lg:px-4  lg:text-xl text-white"
           >
             Visit us
           </button>

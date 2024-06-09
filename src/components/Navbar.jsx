@@ -19,6 +19,7 @@ const Navbar = () => {
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
           <li><Link to="/dashboard">Dashboard</Link></li>
             </ul>
           </div>
@@ -33,6 +34,7 @@ const Navbar = () => {
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
           <li><Link to="/dashboard">Dashboard</Link></li>
           </ul>
         </div>
@@ -41,13 +43,13 @@ const Navbar = () => {
         {user && ( 
           <button
             onClick={handleLogOut}
-            className="btn bg-emerald-700 font-serif font-bold px-4 text-xl text-white"
+            className="btn bg-emerald-700 font-serif font-bold px-2 lg:px-4 text-sm lg:text-xl  text-white"
           >
             SignOut
           </button>
         )}
         {!user && ( 
-          <Link to="/login" className="btn bg-emerald-700 lg:text-lg text-white">
+          <Link to="/login" className="btn bg-emerald-700 text-sm lg:text-lg text-white">
             Login
           </Link>
         )}

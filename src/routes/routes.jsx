@@ -14,6 +14,7 @@ import Alltoys from "../Pages/Alltoys";
 import Addtoy from "../Pages/Addtoy";
 import ToyDetailsDashboard from "../Pages/ToyDetailsDashboard";
 import EditToy from "../Pages/EditToy";
+import Shop from "../Pages/Shop";
 
 export const router = createBrowserRouter([
     {
@@ -42,7 +43,11 @@ export const router = createBrowserRouter([
             path:"/contact",
             element: <Contact></Contact>
         },
-        
+        {
+          path:"/shop",
+          element: <Shop></Shop>,
+          loader: () =>fetch("http://localhost:5000/toysDatabase")
+      },
         {
             path:"/login",
             element: <Login></Login>

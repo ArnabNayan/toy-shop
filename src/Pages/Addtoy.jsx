@@ -1,7 +1,9 @@
+
 import toast from "react-hot-toast";
 
 
 const Addtoy = () => {
+
     const handleSubmit=async(e)=>{
         e.preventDefault()
         const form=e.target;
@@ -22,6 +24,7 @@ const Addtoy = () => {
             body:JSON.stringify(data),
         }).then((res)=>res.json())
            .then(()=>{
+          
             toast.success("Product added successfully")
             form.reset()
            })

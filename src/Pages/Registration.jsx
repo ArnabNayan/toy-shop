@@ -2,27 +2,41 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import GoogleLogin from "../googleLogin/GoogleLogin";
+import toast from "react-hot-toast";
+
 
 
 const Registration = () => {
     const [pass,setPass]=useState(true)
-    const {createUser,user}=useAuth()
+   
+    const {createUser,user,updateUserProfile}=useAuth()
     const location=useLocation()
     const navigate=useNavigate()
     const from=location?.state?.from?.pathname||'/';
-    const handleSubmit=(e)=>{
+    const handleSubmit=async(e)=>{
       e.preventDefault();
       const form=e.target;
+      const name=form.name.value;
       const email=form.email.value;
       const password=form.password.value;
       const confirm_password=form.confirm_password.value;
+      const photoURL = form.photoURL.value;
       if(password!==confirm_password){
          setPass(false)
       }
-      console.log(email,password,confirm_password)
+      console.log(name,email,password,confirm_password,photoURL)
       if(password==confirm_password){
        
-        createUser(email,password)
+        try {
+        
+          await createUser(email, password);
+          await updateUserProfile(name, photoURL);
+          toast.success("User registered successfully");
+          form.reset();
+          navigate(from);
+      } catch (error) {
+          console.error("Error creating user:", error);
+      }
         if(user){
           navigate(from)
         }
@@ -36,6 +50,12 @@ const Registration = () => {
           </div>
           <div className="card shrink-0 w-full max-w-md shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit} className="card-body">
+            <div className="form-control">
+                <label className="label">
+                  <span className="label-text text-lg">Name</span>
+                </label>
+                <input type="text" placeholder="name" className="input input-bordered"name="name" required />
+              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-lg">Email</span>
@@ -44,11 +64,19 @@ const Registration = () => {
               </div>
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text text-lg">photoURL</span>
+                </label>
+                <input type="text" placeholder="photoURL" className="input input-bordered" name="photoURL"required />
+                
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text text-lg">Password</span>
                 </label>
                 <input type="password" placeholder="password" className="input input-bordered" name="password"required />
                 
               </div>
+             
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-lg">Confirm Password</span>
@@ -56,6 +84,7 @@ const Registration = () => {
                 <input type="password" placeholder="confirm password" className="input input-bordered"name="confirm_password" required />
                 
               </div>
+           
              {
                 !pass && (
                     <div className="my-2">
@@ -64,7 +93,9 @@ const Registration = () => {
                 )
              }
               <div className="form-control mt-6">
-                <button className="btn bg-cyan-600 text-white text-xl">Register</button>
+                <button className="btn bg-cyan-600 text-white text-xl">
+                  Register
+                   </button>
               </div>
               <div className="form-control mt-6">
                 <GoogleLogin></GoogleLogin>

@@ -5,7 +5,7 @@ import ToyCard from "./ToyCard";
 const Toys = ({data}) => {
     return (
         <div>
-             <h1 className="text-center text-5xl text-cyan-600 mt-8 font-semibold ">.......Our Toy Items.......</h1>
+             <h1 className="text-center text-xl lg:text-5xl text-cyan-600 mt-8 font-semibold ">.......Our Toy Items.......</h1>
              
              <div className="grid lg:grid-cols-3 mt-8 gap-6">
                 {

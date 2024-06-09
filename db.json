@@ -14,7 +14,7 @@
       "image_url": "https://images.tokopedia.net/img/cache/700/product-1/2018/6/27/12225669/12225669_a9fb055e-3a79-4f63-beed-1454464726c5_800_800.jpg",
       "price": 250,
       "rating": 4.7,
-      "category": "Fighter",
+      "category": "Action type",
       "discount": null 
     },
     {
@@ -23,7 +23,7 @@
       "image_url": "https://www.toysrus.com.sg/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw4eb2173a/2/b/6/1/2b61d47c79238247fe89e964c91a099d353bcd76_137154_i1.jpg?sw=500&sh=500&q=75",
       "price": 250,
       "rating": 4.6,
-      "category": "Vehicles",
+      "category": "Outdoor Play",
       "discount": "5% off"
     },
     {
@@ -41,7 +41,7 @@
       "image_url": "https://di2ponv0v5otw.cloudfront.net/posts/2023/03/19/6417d1ae1741be26785e97f4/m_6417d1c5a0aeb70d0800ed40.jpg",
       "price": 350,
       "rating": 4.9,
-      "category": "Educational Toys",
+      "category": "Building Sets",
       "discount": null    
     },
     {
@@ -59,7 +59,7 @@
       "image_url": "https://www.jnltradinginc.com/cdn/shop/products/JNL_535ab651-3581-4422-81d0-e7f5dec04fa2_grande.jpg?v=1512621788",
       "price": 400,
       "rating": 4.7,
-      "category": "Pretend Play",
+      "category": "Action type",
       "discount": null
     },
     {
@@ -77,7 +77,7 @@
       "image_url": "https://images-na.ssl-images-amazon.com/images/I/81gx2fNyozL._AC_UL600_SR600,600_.jpg",
       "price": 300,
       "rating": 4.6,
-      "category": "Action Figures",
+      "category": "Action type",
       "discount": null 
     },
     {
@@ -107,4 +107,5 @@
       "rating": "4.8",
       "discount": "5%"
     }
+   
 ]
