@@ -33,7 +33,7 @@ const Addtoy = () => {
     }
     return (
         <div>
-       <h1 className="text-center text-5xl text-teal-700 mt-8 font-semibold ">.......Add Toy Item.......</h1> 
+       <h1 className="text-center text-4xl text-teal-700 mt-8 font-semibold ">.......Add Toy Item.......</h1> 
   
         <div className="my-16">
           <form onSubmit={handleSubmit}>

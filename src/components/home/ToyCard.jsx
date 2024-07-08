@@ -37,14 +37,14 @@ const ToyCard = ({ toy }) => {
             <figure className="h-80 w-full" >
                 <img className="h-full w-full object-cover" src={image_url} alt="toy" />
             </figure>
-            <p className="absolute right-0 mr-4 px-4 text-lg font-serif bg-orange-400 text-white ">{discount}</p>
+            <p className="absolute right-0 mr-4 px-4 text-md font-serif bg-orange-400 text-white ">{discount}</p>
             <div className="card-body p-4 flex flex-col justify-between">
                 <div>
-                    <h2 className="card-title font-bold font-serif text-2xl">{title}</h2>
+                    <h2 className="card-title font-bold font-serif text-xl">{title}</h2>
                     <p className="font-serif text-lg">{description}</p>
                 </div>
                 <div>
-                    <p className="text-xl">
+                    <p className="text-lg">
                     <Rating
                         initialRating={rating}
                         readonly
@@ -54,7 +54,7 @@ const ToyCard = ({ toy }) => {
                      </p>
                    
                     <div className="card-actions justify-end">
-                        <Link to={`/toys/${_id}`} className="btn bg-cyan-600 font-bold font-serif px-5 text-lg text-white">Details</Link>
+                        <Link to={`/toys/${_id}`} className="btn bg-cyan-600 font-bold font-serif px-5 text-md text-white">Details</Link>
                     </div>
                 </div>
             </div>

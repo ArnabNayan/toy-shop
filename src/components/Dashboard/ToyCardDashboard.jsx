@@ -24,15 +24,15 @@ const ToyCardDashboard = ({toy,onDelete}) => {
       })
     }
     return (
-        <div className="card w-96  h-full  bg-base-100  shadow-xl">
-      <figure className="h-80 w-full"><img className="h-full w-full object-cover" src={image_url} alt="toy" /></figure>
+        <div className="card w-80 h-full  bg-base-100  shadow-xl">
+      <figure className="h-72 w-full"><img className="h-full w-full object-cover" src={image_url} alt="toy" /></figure>
       <p className="absolute right-0 mr-4 px-4 text-lg font-serif bg-orange-400 text-white ">{discount}</p>
       <div className="card-body">
-        <h2 className="card-title font-bold font-serif text-2xl">{title}</h2>
+        <h2 className="card-title font-bold font-serif text-xl">{title}</h2>
         <p className="font-serif text-lg">{description}</p>
         <p className="font-serif text-lg"> Category:{category}</p>
         <p className="font-serif text-lg"> {price}tk</p>
-        <p className="text-xl">
+        <p className="text-md">
                     <Rating
                         initialRating={rating}
                         readonly
@@ -41,9 +41,9 @@ const ToyCardDashboard = ({toy,onDelete}) => {
                     />    
                      </p>
         <div className="card-actions justify-end">
-          <Link to={`toydetails/${_id}`} className="btn bg-cyan-600 text-white font-bold font-serif px-2 text-lg">Details</Link>
-          <Link to={`edit/${_id}`} className="btn bg-green-600 text-white font-bold font-serif px-2 text-lg">Edit</Link>
-          <button onClick={handleDelete} className="btn bg-rose-600 text-white font-bold font-serif px-2 text-lg">Delete</button>
+          <Link to={`toydetails/${_id}`} className="btn bg-cyan-600 text-white font-bold font-serif px-2 text-md">Details</Link>
+          <Link to={`edit/${_id}`} className="btn bg-green-600 text-white font-bold font-serif px-2 text-md">Edit</Link>
+          <button onClick={handleDelete} className="btn bg-rose-600 text-white font-bold font-serif px-2 text-md">Delete</button>
         </div>
       </div>
     </div>

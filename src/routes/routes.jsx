@@ -4,7 +4,7 @@ import Home from "../Pages/Home";
 import Blog from "../Pages/Blog";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
-import Dashboard from "../Pages/Dashboard";
+// import Dashboard from "../Pages/Dashboard";
 import ToyDetails from "../Pages/ToyDetails";
 import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
@@ -15,6 +15,15 @@ import Addtoy from "../Pages/Addtoy";
 import ToyDetailsDashboard from "../Pages/ToyDetailsDashboard";
 import EditToy from "../Pages/EditToy";
 import Shop from "../Pages/Shop";
+import Cart from "../components/Dashboard/Cart/Cart";
+import AllUsers from "../Pages/AllUsers";
+import AdminRoute from "./PrivateRoute/AdminRoute";
+import UserHome from "../Pages/UserHome";
+import Payment from "../components/Dashboard/Payment/Payment";
+import PaymentHistory from "../components/Dashboard/PaymentHistory/PaymentHistory";
+import AdminHome from "../components/Dashboard/AdminHome/AdminHome";
+import ManageOrders from "../components/Dashboard/ManageOrders/ManageOrders";
+
 
 export const router = createBrowserRouter([
     {
@@ -60,31 +69,56 @@ export const router = createBrowserRouter([
     },
     {
         path: "dashboard",
-      element: <DashBoardLayout></DashBoardLayout>,
+      element: <PrivateRoute><DashBoardLayout></DashBoardLayout></PrivateRoute>,
       children:[
         {
-          path:"",
-          element:<PrivateRoute><Dashboard></Dashboard> </PrivateRoute>
+          path:"userHome",
+          element:<UserHome></UserHome>
+        },
+        {
+          path:"payment",
+          element:<Payment></Payment>
+        },
+        {
+          path:"paymentHistory",
+          element:<PaymentHistory></PaymentHistory>
         },
         {
             path:"all-toys",
-            element:<PrivateRoute><Alltoys></Alltoys> </PrivateRoute>,
+            element:<Alltoys></Alltoys> ,
          
           },
           {
             path:"all-toys/toydetails/:id",
-            element: <PrivateRoute><ToyDetailsDashboard></ToyDetailsDashboard></PrivateRoute> ,
+            element: <ToyDetailsDashboard></ToyDetailsDashboard> ,
             loader:({params})=>fetch(`http://localhost:5000/toysDatabase/${params.id}`)
         },
           {
             path:"add-toy",
-            element:<PrivateRoute><Addtoy></Addtoy> </PrivateRoute>
+            element:<AdminRoute><Addtoy></Addtoy></AdminRoute> 
+          },
+          {
+            path:"adminHome",
+            element:<AdminRoute><AdminHome></AdminHome></AdminRoute>
+          },
+          {
+            path:"manageorders",
+            element:<AdminRoute><ManageOrders></ManageOrders></AdminRoute>
+          },
+          {
+            path:"cart",
+            element:<Cart></Cart> 
           },
           {
             path:"all-toys/edit/:id",
-            element: <PrivateRoute><EditToy></EditToy></PrivateRoute> ,
+            element: <EditToy></EditToy> ,
             loader:({params})=>fetch(`http://localhost:5000/toysDatabase/${params.id}`)
         },
+        //admin route
+        {
+          path:'users',
+          element:<AdminRoute><AllUsers></AllUsers></AdminRoute> 
+        }
       ]
     }
   ]);

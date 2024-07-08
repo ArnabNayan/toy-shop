@@ -27,25 +27,25 @@ const Login = () => {
             
         <div className="hero-content flex flex-col gap-8">
          <div className="text-center">
-           <h1 className="lg:text-5xl text-2xl font-bold text-cyan-600">Login From Here!</h1>
+           <h1 className="lg:text-4xl text-2xl font-bold text-cyan-600">Login From Here!</h1>
           </div>
           <div className="card shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-lg">Email</span>
+                  <span className="label-text text-md">Email</span>
                 </label>
                 <input type="email" placeholder="email" className="input input-bordered"name="email" required />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-lg">Password</span>
+                  <span className="label-text text-md">Password</span>
                 </label>
                 <input type="password" placeholder="password" className="input input-bordered" name="password"required />
                 
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-cyan-600 text-white text-xl">Login</button>
+                <button className="btn bg-cyan-600 text-white text-lg">Login</button>
               </div>
               <div className="form-control mt-6">
                 <GoogleLogin></GoogleLogin>

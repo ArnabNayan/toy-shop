@@ -19,7 +19,7 @@ const Shop = () => {
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-2xl">
       {/* <h1 className="mb-5 text-2xl lg:text-7xl font-bold font-serif bg-cyan-800 p-10 lg:p-28  bg-opacity-65">Shop Now</h1> */}
-      <h1 className="mb-5 text-2xl lg:text-7xl font-bold font-serif bg-cyan-800 p-10 lg:p-28  bg-opacity-65 ">
+      <h1 className="mb-5 text-2xl lg:text-5xl font-bold font-serif bg-cyan-800 p-10 lg:p-28  bg-opacity-65 ">
             <span className=" fade-in">Shop</span>
            <span className=" fade-in-delayed"> Now</span>
          </h1>
@@ -28,7 +28,7 @@ const Shop = () => {
   </div>
 </div>
 
-            <h1 className="text-center text-xl lg:text-5xl text-cyan-600 mt-14 font-semibold">.......Order your toy.......</h1>
+            <h1 className="text-center text-xl lg:text-4xl text-cyan-600 mt-14 font-semibold">.......Order your toy.......</h1>
             <Tabs>
                 <TabList className="font-serif font-semibold text-cyan-600 mt-6">
                     {categories.map(category => (

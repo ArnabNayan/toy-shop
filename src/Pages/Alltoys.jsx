@@ -17,8 +17,8 @@ const Alltoys = () => {
     }
     return (
         <div>
-            <h1 className="text-center text-5xl text-teal-700 mt-8 font-semibold ">.......Our Toy Items.......</h1> 
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-8 gap-4">
+            <h1 className="text-center text-4xl text-teal-700 mt-8 font-semibold ">.......Our Toy Items.......</h1> 
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-6">
                 {
                     toys.map(toy=>(
                         
