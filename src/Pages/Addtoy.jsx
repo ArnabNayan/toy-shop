@@ -12,11 +12,11 @@ const Addtoy = () => {
         const price=form.price.value;
         const category=form.category.value;
         const image_url=form.image_url.value;
-        const rating=form.rating.value;
+        // const rating=form.rating.value;
         const discount=form.discount.value;
-        const data={title,description,price,category,image_url,rating,discount}
+        const data={title,description,price,category,image_url,discount}
         // console.log(data)
-        await fetch("http://localhost:5000/toysDatabase",{
+        await fetch("https://toy-shop-server-1bae.onrender.com/toysDatabase",{
             method:"POST",
             headers:{
                 "Content-type":"application/json",
@@ -33,7 +33,7 @@ const Addtoy = () => {
     }
     return (
         <div>
-       <h1 className="text-center text-4xl text-teal-700 mt-8 font-semibold ">.......Add Toy Item.......</h1> 
+       <h1 className="text-center text-2xl lg:text-4xl text-teal-700 mt-8 font-semibold ">.......Add Toy Item.......</h1> 
   
         <div className="my-16">
           <form onSubmit={handleSubmit}>
@@ -77,14 +77,14 @@ const Addtoy = () => {
                 placeholder="Image URL"
               />
             </div>
-            <div className="mt-2">
+            {/* <div className="mt-2">
               <input
                 className="bg-gray-100 p-4 w-full border border-black rounded-lg"
                 type="text"
                 name="rating"
                 placeholder="Rating"
               />
-            </div>
+            </div> */}
             <div className="mt-2">
               <input
                 className="bg-gray-100 p-4 w-full border border-black rounded-lg"

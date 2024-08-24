@@ -25,9 +25,9 @@ const UserHome = () => {
               user?.displayName?<h3 className="text-lg lg:text-3xl font-serif font-semibold">Hi, Welcome  <span className="text-lg lg:text-3xl font-serif font-semibold text-teal-600"> {user.displayName}</span></h3> :'Back'
              }
 
-             <div className="stats shadow mt-10 gap-5">
+             <div className="stats bg-transparent flex flex-col lg:flex-row  mt-10 gap-5">
   
-             <div className="stat bg-green-600 rounded-2xl w-48">
+             <div className="stat bg-green-600 rounded-2xl w-full lg:w-48">
              <div className="stat-figure text-white">
                    <FaMotorcycle className="text-3xl"></FaMotorcycle>
                  </div>
@@ -36,7 +36,7 @@ const UserHome = () => {
       
              </div>
              
-             <div className="stat bg-indigo-600 rounded-2xl w-48">
+             <div className="stat bg-indigo-600 rounded-2xl w-full lg:w-48">
              <div className="stat-figure text-white">
                    <FaMoneyBill className="text-3xl"></FaMoneyBill>
                  </div>
@@ -45,7 +45,7 @@ const UserHome = () => {
            
              </div>
              
-             <div className="stat bg-amber-600 rounded-2xl w-48">
+             <div className="stat bg-amber-600 rounded-2xl w-full lg:w-48">
              <div className="stat-figure text-white">
                    <FaJediOrder className="text-3xl"></FaJediOrder>
                  </div>
@@ -55,8 +55,8 @@ const UserHome = () => {
              </div>
              
            </div>
-        <div className="flex mt-10 gap-2 ">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row mt-10 gap-2 ">
+          <div className="w-full lg:w-1/2">
           <div className="bg-teal-100 p-5 h-80">
           
           <img className="border border-teal-400 rounded-full w-60 h-60 mx-auto" src={user?.photoURL} alt="" />
@@ -64,7 +64,7 @@ const UserHome = () => {
           </div>
            
           </div>
-          <div className="w-1/2 ">
+          <div className="w-full lg:w-1/2 ">
           <div className="bg-green-100 p-5 h-80">
              <h2 className="text-lg lg:text-3xl font-serif font-semibold">Your Activities</h2>
              <div className="flex gap-3 mt-3 font-serif">

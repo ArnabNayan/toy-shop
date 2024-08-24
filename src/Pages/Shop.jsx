@@ -28,11 +28,13 @@ const Shop = () => {
   </div>
 </div>
 
-            <h1 className="text-center text-xl lg:text-4xl text-cyan-600 mt-14 font-semibold">.......Order your toy.......</h1>
+            <h1 data-aos="flip-up"
+        data-aos-duration="2000" className="text-center text-xl lg:text-4xl text-cyan-600 mt-14 font-semibold">.......Order your toy.......</h1>
             <Tabs>
                 <TabList className="font-serif font-semibold text-cyan-600 mt-6">
                     {categories.map(category => (
-                        <Tab key={category}>{category}</Tab>
+                        <Tab data-aos="fade-up"
+                        data-aos-duration="2000" key={category}>{category}</Tab>
                     ))}
                 </TabList>
 
@@ -40,7 +42,8 @@ const Shop = () => {
                     <TabPanel key={category}>
                         <div className="grid lg:grid-cols-3 mt-8 gap-6">
                             {data.filter(item => item.category === category).map(toy => (
-                                <div key={toy._id} className="flex items-center justify-center">
+                                <div data-aos="fade-up"
+        data-aos-duration="2000" key={toy._id} className="flex items-center justify-center">
                                     <ShopCard toy={toy} />
                                 </div>
                             ))}

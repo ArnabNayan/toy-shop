@@ -23,6 +23,8 @@ import Payment from "../components/Dashboard/Payment/Payment";
 import PaymentHistory from "../components/Dashboard/PaymentHistory/PaymentHistory";
 import AdminHome from "../components/Dashboard/AdminHome/AdminHome";
 import ManageOrders from "../components/Dashboard/ManageOrders/ManageOrders";
+import AddReview from "../components/Dashboard/AddReview/AddReview";
+import FullArticle from "../Pages/FullArticle";
 
 
 export const router = createBrowserRouter([
@@ -33,17 +35,21 @@ export const router = createBrowserRouter([
         {
             path:"/",
             element: <Home></Home>,
-            loader:()=>fetch("http://localhost:5000/toys")
+            loader:()=>fetch("https://toy-shop-server-1bae.onrender.com/toys")
         },
         {
             path:"/toys/:id",
             element: <ToyDetails></ToyDetails>,
-            loader:({params})=>fetch(`http://localhost:5000/toys/${params.id}`)
+            loader:({params})=>fetch(`https://toy-shop-server-1bae.onrender.com/toys/${params.id}`)
         },
         {
             path:"/blog",
             element: <Blog></Blog>
         },
+        {
+          path:"/blog/:id",
+          element: <FullArticle></FullArticle>
+      },
         {
            path:"/about",
            element: <About></About>
@@ -55,7 +61,7 @@ export const router = createBrowserRouter([
         {
           path:"/shop",
           element: <Shop></Shop>,
-          loader: () =>fetch("http://localhost:5000/toysDatabase")
+          loader: () =>fetch("https://toy-shop-server-1bae.onrender.com/toysDatabase")
       },
         {
             path:"/login",
@@ -84,6 +90,10 @@ export const router = createBrowserRouter([
           element:<PaymentHistory></PaymentHistory>
         },
         {
+          path:"review",
+          element:<AddReview></AddReview>
+        },
+        {
             path:"all-toys",
             element:<Alltoys></Alltoys> ,
          
@@ -91,7 +101,7 @@ export const router = createBrowserRouter([
           {
             path:"all-toys/toydetails/:id",
             element: <ToyDetailsDashboard></ToyDetailsDashboard> ,
-            loader:({params})=>fetch(`http://localhost:5000/toysDatabase/${params.id}`)
+            loader:({params})=>fetch(`https://toy-shop-server-1bae.onrender.com/toysDatabase/${params.id}`)
         },
           {
             path:"add-toy",
@@ -112,7 +122,7 @@ export const router = createBrowserRouter([
           {
             path:"all-toys/edit/:id",
             element: <EditToy></EditToy> ,
-            loader:({params})=>fetch(`http://localhost:5000/toysDatabase/${params.id}`)
+            loader:({params})=>fetch(`https://toy-shop-server-1bae.onrender.com/toysDatabase/${params.id}`)
         },
         //admin route
         {

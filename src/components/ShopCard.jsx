@@ -1,5 +1,5 @@
-import { FaStar } from "react-icons/fa";
-import Rating from "react-rating";
+// import { FaStar } from "react-icons/fa";
+// import Rating from "react-rating";
 import useAuth from "../hooks/useAuth";
 
 import Swal from "sweetalert2";
@@ -13,7 +13,7 @@ import useCart from "../hooks/useCart";
 // eslint-disable-next-line react/prop-types
 const ShopCard = ({toy}) => {
     // eslint-disable-next-line react/prop-types
-    const { title, description, image_url, rating ,discount,price,_id} = toy;
+    const { title, description, image_url,discount,price,_id} = toy;
     const {user}=useAuth()
     const location = useLocation();
     
@@ -32,7 +32,7 @@ const ShopCard = ({toy}) => {
             image_url,
             price
         }
-        // axios.post('http://localhost:5000/carts',cartItem)
+        // axios.post('https://toy-shop-server-1bae.onrender.com/carts',cartItem)
         // .then(res=>{
         //     console.log(res.data)
         //     if(res.data.insertedId){
@@ -67,25 +67,29 @@ const ShopCard = ({toy}) => {
     return (
         <div className="card w-96 h-full bg-base-100 shadow-xl ">
             <figure className="h-80 w-full" >
-                <img className="h-full w-full object-cover" src={image_url} alt="toy" />
+                <img className="h-full w-full object-cover hover:scale-110" src={image_url} alt="toy" />
             </figure>
-            <p className="absolute right-0 mr-4 px-4 text-md font-serif bg-orange-400 text-white ">{discount}</p>
+            <p data-aos="fade-up"
+        data-aos-duration="2000" className="absolute right-0 mr-4 px-4 text-md font-serif bg-orange-400 text-white ">{discount}</p>
             <div className="card-body p-4 flex flex-col justify-between">
                 <div>
-                    <h2 className="card-title font-bold font-serif text-xl">{title}</h2>
-                    <p className="font-serif text-lg">{description}</p>
+                    <h2 data-aos="fade-up"
+        data-aos-duration="2000" className="card-title font-bold font-serif text-xl">{title}</h2>
+                    <p data-aos="fade-up"
+        data-aos-duration="2000" className="font-serif text-lg">{description}</p>
                 </div>
                 <div>
-                <p className="text-lg">
+                {/* <p className="text-lg">
                     <Rating
                         initialRating={rating}
                         readonly
                         emptySymbol={<FaStar color="lightgray" />}
                         fullSymbol={<FaStar color="orange" />}
                     />  
-                     </p>
+                     </p> */}
                     <div className="card-actions flex flex-col items-center">
-                        <button onClick={()=>handleAddtoCart(toy)} className="btn bg-cyan-600 font-bold font-serif px-5 text-md text-white">Add to Cart</button>
+                        <button data-aos="fade-up"
+        data-aos-duration="2000" onClick={()=>handleAddtoCart(toy)} className="btn bg-cyan-600 font-bold font-serif px-5 text-md text-white">Add to Cart</button>
                     </div>
                 </div>
             </div>

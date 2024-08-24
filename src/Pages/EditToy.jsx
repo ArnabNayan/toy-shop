@@ -10,7 +10,7 @@ const EditToy = () => {
     const [price,setPrice]=useState(toy.price);
     const [category,setCategory]=useState(toy.category);
     const [iamge_url,setImageUrl]=useState(toy.image_url);
-    const [rating,setRating]=useState(toy.rating);
+    // const [rating,setRating]=useState(toy.rating);
     const [discount,setDiscount]=useState(toy.discount);
     const handleSubmit=async(e)=>{
         e.preventDefault()
@@ -20,11 +20,11 @@ const EditToy = () => {
         const price=form.price.value;
         const category=form.category.value;
         const image_url=form.image_url.value;
-        const rating=form.rating.value;
+        // const rating=form.rating.value;
         const discount=form.discount.value;
-        const data={title,description,price,category,image_url,rating,discount}
+        const data={title,description,price,category,image_url,discount}
         // console.log(data)
-        await fetch(`http://localhost:5000/toysDatabase/${toy._id}`,{
+        await fetch(`https://toy-shop-server-1bae.onrender.com/toysDatabase/${toy._id}`,{
             method:"PATCH",
             headers:{
                 "Content-type":"application/json",
@@ -94,7 +94,7 @@ const EditToy = () => {
               onChange={(e) => setImageUrl(e.target.value)}
                />
              </div>
-             <div className="mt-2">
+             {/* <div className="mt-2">
                <input
                  className="bg-gray-100 p-4 w-full border border-black rounded-lg"
                  type="text"
@@ -103,7 +103,7 @@ const EditToy = () => {
                  value={rating}
               onChange={(e) => setRating(e.target.value)}
                />
-             </div>
+             </div> */}
              <div className="mt-2">
                <input
                  className="bg-gray-100 p-4 w-full border border-black rounded-lg"

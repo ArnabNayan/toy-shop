@@ -8,7 +8,7 @@ export const ToyProvider = ({ children }) => {
 
     useEffect(() => {
         // Fetch toys initially
-        fetch("http://localhost:5000/toys")
+        fetch("https://toy-shop-server-1bae.onrender.com/toys")
             .then(res => res.json())
             .then(data => setToys(data));
     }, []);

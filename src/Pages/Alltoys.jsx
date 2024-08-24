@@ -7,7 +7,7 @@ const Alltoys = () => {
     
     const [toys,setToys]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:5000/toysDatabase")
+        fetch("https://toy-shop-server-1bae.onrender.com/toysDatabase")
         .then(res=>res.json())
         .then(data=>setToys(data))
     },[])
@@ -17,7 +17,7 @@ const Alltoys = () => {
     }
     return (
         <div>
-            <h1 className="text-center text-4xl text-teal-700 mt-8 font-semibold ">.......Our Toy Items.......</h1> 
+            <h1 className="text-center text-2xl lg:text-4xl text-teal-700 mt-8 font-semibold ">.......Our Toy Items.......</h1> 
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-6">
                 {
                     toys.map(toy=>(

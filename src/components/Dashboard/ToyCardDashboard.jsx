@@ -1,15 +1,15 @@
 import toast from "react-hot-toast";
-import { FaStar } from "react-icons/fa";
-import Rating from "react-rating";
+// import { FaStar } from "react-icons/fa";
+// import Rating from "react-rating";
 import { Link } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
 const ToyCardDashboard = ({toy,onDelete}) => {
     // eslint-disable-next-line react/prop-types
-    const {_id,title,description,image_url,rating,category,price,discount}=toy;
+    const {_id,title,description,image_url,category,price,discount}=toy;
     const handleDelete=async()=>{
-      await fetch(`http://localhost:5000/toysDatabase/${_id}`,{
+      await fetch(`https://toy-shop-server-1bae.onrender.com/toysDatabase/${_id}`,{
         method:"DELETE",
         headers:{
           "Content-type":"application/json",
@@ -31,15 +31,15 @@ const ToyCardDashboard = ({toy,onDelete}) => {
         <h2 className="card-title font-bold font-serif text-xl">{title}</h2>
         <p className="font-serif text-lg">{description}</p>
         <p className="font-serif text-lg"> Category:{category}</p>
-        <p className="font-serif text-lg"> {price}tk</p>
-        <p className="text-md">
+        <p className="font-serif text-lg"> Price:{price}tk</p>
+        {/* <p className="text-md">
                     <Rating
                         initialRating={rating}
                         readonly
                         emptySymbol={<FaStar color="lightgray" />}
                         fullSymbol={<FaStar color="orange" />}
                     />    
-                     </p>
+                     </p> */}
         <div className="card-actions justify-end">
           <Link to={`toydetails/${_id}`} className="btn bg-cyan-600 text-white font-bold font-serif px-2 text-md">Details</Link>
           <Link to={`edit/${_id}`} className="btn bg-green-600 text-white font-bold font-serif px-2 text-md">Edit</Link>

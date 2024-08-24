@@ -2,7 +2,8 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-cyan-600 text-base-content">
+        <footer data-aos="fade-up"
+        data-aos-duration="2000" className="footer p-10 bg-cyan-600 text-base-content">
   <aside>
   <h1 className="lg:text-5xl font-bold ">
             <span className="text-yellow-400 fade-in">Toy</span>
