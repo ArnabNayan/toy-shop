@@ -6,8 +6,8 @@ import useAuth from "./useAuth";
 //     baseURL:'https://toy-shop-server-1bae.onrender.com'
 // })
 const axiosSecure=axios.create({
-    // baseURL:'https://toy-shop-server-1bae.onrender.com'
-    baseURL:'http://localhost:5000/'
+    baseURL:'https://toy-shop-server-1bae.onrender.com'
+    // baseURL:'http://localhost:5000/'
 })
 const useAxiosSecure = () => {
     const navigate=useNavigate()
